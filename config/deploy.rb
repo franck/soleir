@@ -7,9 +7,9 @@ set :default_stage, "production"
 #require 'capistrano/ext/multistage'
 
 set :application, "soleir"
-set :deploy_in, "/home/soleir/soleil.fr"
+set :deploy_in, "/home/soleir/soleir.fr"
 
-set :hostname, "173.236.241.243"
+set :hostname, "soleir.fr"
 role :app, "#{hostname}"
 role :web, "#{hostname}"
 role :db, "#{hostname}", :primary => true
@@ -87,4 +87,4 @@ end
 after "deploy:setup", "deploy:shared_uploads_folder"
 after "deploy:symlink", "deploy:symlink_uploads"
 after "deploy", "deploy:symlink_config_files"
-after "deploy", "deploy:cleanup"
+#after "deploy", "deploy:cleanup"

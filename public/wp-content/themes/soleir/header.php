@@ -30,12 +30,12 @@
     <div id="header">
       <div id="header-title">
         <h2><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
-      	<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+      	<h3 id="header-tagline"><?php bloginfo( 'description' ); ?></h3>
       </div><!-- #header-title -->
       
       <div id="menu">
         <ul>
-          <li><a href='<?php home_url( '/' ); ?>'>Accueil</a></li>
+          <li><a href='<?php echo home_url('/'); ?>'>Accueil</a></li>
 
           <?php query_posts('pagename=presentation'); ?>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
