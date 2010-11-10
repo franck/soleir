@@ -7,6 +7,7 @@ set :default_stage, "production"
 #require 'capistrano/ext/multistage'
 
 set :application, "soleir"
+set :deploy_in, "/home/soleir/soleil.fr"
 
 set :hostname, "173.236.241.243"
 role :app, "#{hostname}"
@@ -30,14 +31,14 @@ set :git_shallow_clone, 1
 #set :rake, "/opt/ruby-enterprise/bin/rake"
 
 task :production do
-  set :deploy_to, "/var/www/#{application}/app"
+  set :deploy_to, "#{deploy_in}/#{application}/app"
   set :env, "production"
   # Deploy to production site only from stable branch
   set :branch, "stable"
 end
 
 task :staging do
-  set :deploy_to, "/var/www/#{application}/staging"
+  set :deploy_to, "#{deploy_in}/#{application}/staging"
   set :env, "staging"
 end
 
@@ -50,7 +51,7 @@ namespace :deploy do
   desc "Add uploads folder"
   task :shared_uploads_folder, :roles => :web do
     run "mkdir -p #{shared_path}/uploads"
-    run "chown -R deploy:deploy #{shared_path}/uploads"
+    run "chown -R #{user} #{shared_path}/uploads"
     run "chmod 755 #{shared_path}/uploads"
   end
   

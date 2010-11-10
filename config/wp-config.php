@@ -18,8 +18,8 @@
  */
 
 define('WP_CACHE', true); //Added by WP-Cache Manager
-define('WP_HOME','http://www.connexion-events.com/fr');
-define('WP_SITEURL','http://www.connexion-events.com/fr');
+// ** define('WP_HOME','http://www.connexion-events.com/fr'); ** //
+// ** define('WP_SITEURL','http://www.connexion-events.com/fr'); ** //
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Le nom de la base de données de WordPress. */
@@ -32,7 +32,7 @@ define('DB_USER', 'soleir');
 define('DB_PASSWORD', 'thibamay');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.soleil.fr');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
