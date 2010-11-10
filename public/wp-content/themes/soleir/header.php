@@ -35,11 +35,11 @@
       
       <div id="menu">
         <ul>
-          <li><a href='<?php echo home_url('/'); ?>'>Accueil</a></li>
+          <li><a href='<?php echo home_url('/'); ?>'>Présentation</a></li>
 
-          <?php query_posts('pagename=presentation'); ?>
+          <?php query_posts('pagename=contact'); ?>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <li><a href='<?php the_permalink(); ?>'>Présentation</a></li>
+          <li><a href='<?php the_permalink(); ?>'>Contact</a></li>
           <?php endwhile; endif; ?>
           
 
