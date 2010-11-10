@@ -77,8 +77,10 @@ body { text-align:center; background:#F0F0F0;
 #header { float:left; }
 
 #header-title { padding:20px 0; float:left; width:100%;}
-#header-title h2 { font-size:1.6em; margin-bottom:15px; background:url(images/soleir_logo.png) no-repeat top left; }
-#header-title h2 a { text-decoration:none; text-indent:-10000px; width:200px; height:131px; display:block; }
+#header-title h2 { font-size:1.6em; margin-bottom:15px; 
+  background:url(images/soleir_logo_140.png) no-repeat top left; 
+}
+#header-title h2 a { text-decoration:none; text-indent:-10000px; width:140px; height:92px; display:block; }
 #header-title h3 { color:#726659; font-size:1.2em; margin-bottom:0em; }
 
 #menu { 
@@ -89,9 +91,9 @@ body { text-align:center; background:#F0F0F0;
   background:url(images/nav.png);
   border:1px solid #444;
 }
-#menu ul { width:100%; float:left; height:45px; margin-left:15px; }
+#menu ul { width:100%; float:left; height:40px; margin-left:15px; }
 #menu ul li { float:left; }
-#menu ul li a { float:left; display:inline-block; line-height:45px; padding:0 15px; color:#EEE; text-decoration:none; text-shadow:#000 1px 1px; border-right:1px solid #4d443c; }
+#menu ul li a { float:left; display:inline-block; line-height:40px; padding:0 15px; color:#EEE; text-decoration:none; text-shadow:#000 1px 1px; border-right:1px solid #4d443c; }
 #menu ul li a:hover { background:url(images/nav.png) 0 60px; }
  
 /* =main
