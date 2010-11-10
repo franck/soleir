@@ -91,7 +91,7 @@ body { text-align:center; background:#F0F0F0;
 }
 #menu ul { width:100%; float:left; height:45px; margin-left:15px; }
 #menu ul li { float:left; }
-#menu ul li a { float:left; display:inline-block; line-height:45px; padding:0 15px; color:#EEE; text-decoration:none; text-shadow:#000 1px 1px; border-right:1px solid #222; }
+#menu ul li a { float:left; display:inline-block; line-height:45px; padding:0 15px; color:#EEE; text-decoration:none; text-shadow:#000 1px 1px; border-right:1px solid #4d443c; }
 #menu ul li a:hover { background:url(images/nav.png) 0 60px; }
  
 /* =main
