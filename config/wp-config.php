@@ -32,7 +32,7 @@ define('DB_USER', 'soleir');
 define('DB_PASSWORD', 'thibamay');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'mysql.soleil.fr');
+define('DB_HOST', 'mysql.lilyetfranck.com');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
